@@ -1,0 +1,3 @@
+function inscricao(){
+    window.location
+}
