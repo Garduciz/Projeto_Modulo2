@@ -7,7 +7,7 @@ const cep = $( '#cep' );
 const botao = $( '#btnCadastro' );
 const test = '41185210';
 
-botao.on( 'click', function(event) {
+botao.on( 'click', (event) => {
     event.preventDefault();
    
           
