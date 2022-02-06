@@ -10,17 +10,20 @@ const test = '41185210';
 botao.on( 'click', function(event) {
     event.preventDefault();
    
+          
+})
+
+cep.on( 'change', ()=>{
     const busca = cep.val();
 
     $.getJSON(`https://viacep.com.br/ws/${busca}/json/`, ( cep ) => {
         console.log( cep )
-        $( '#cep' ).val( cep.cep )
+
         $( '#rua' ).val( cep.logradouro );
         $( '#bairro' ).val( cep.bairro );
         $( '#cidade' ).val( cep.localidade );
         $( '#uf' ).val( cep.uf );
     })
-          
 })
 
 
