@@ -17,14 +17,10 @@
     background-color: aquamarine;
     font-family: sans-serif;
     border: auto solid black;
-    margin: auto;
-    padding: auto;
 }
 .rodape{
     display: flex;
     justify-content: space-between;
-    width: auto;
-    height: auto;
     background-color: black;
     color: aliceblue;
 }
