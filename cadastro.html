@@ -14,14 +14,17 @@
 </head>
 <body>
 
-    <header>
-        <span>Projeto Modulo 2</span>
-        <nav>
+    <header class="cabecalho">
+        <span class="titulo">Projeto Modulo 2</span>
+        <nav class="menu">
             <ul>
-                <li></li>
+                <a href="index.html"><p>Home</p></a>
+                <a href="sobre.html"><p>Sobre</p></a>
+                <a href="contato.html"><p>Contato</p></a>
             </ul>
         </nav>
     </header>
+
     <h1>Efetue seu cadastro</h1>
     <main>
         <form class="cadastro">
@@ -34,16 +37,18 @@
             
             
             <label>Rua:
-            <input id="rua" type="text"  /></label><br />
+            <input id="rua" type="text"/></label><br />
             <label>Bairro:
-            <input id="bairro" type="text"   /></label><br />
+            <input id="bairro" type="text"/></label><br />
             <label>Cidade:
-            <input id="cidade" type="text"   /></label><br />
+            <input id="cidade" type="text"/></label><br />
             <label>Estado:
-            <input id="uf" type="text"  /></label><br />
+            <input id="uf" type="text"/></label><br />
             
             <button id="btnCadastro">Cadastrar</button>
+            <span>Já tem uma conta? <a href="login.html">Fazer login</a></span>
         </form>
     </main>
+    
 </body>
 </html>
