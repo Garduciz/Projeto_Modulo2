@@ -1,3 +1,3 @@
 function inscricao(){
-    window.location
+    window.location.href="cadastro.html";
 }

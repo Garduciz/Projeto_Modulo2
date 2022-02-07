@@ -16,15 +16,10 @@
     color: black;
     background-color: aquamarine;
     font-family: sans-serif;
-    border: auto solid black;
+    border: 2px solid black;
 }
+
 .rodape{
-    display: flex;
-    justify-content: space-between;
     background-color: black;
     color: aliceblue;
-}
-#btnInscricao{
-    display: flex;
-    justify-content: center;
 }
