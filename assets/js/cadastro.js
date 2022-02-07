@@ -6,7 +6,10 @@ const rg = $( '#rg' );
 const cep = $( '#cep' );
 const botao = $( '#btnCadastro' );
 const test = '41185210';
+
+const localStorageTransactions = JSON.parse(localStorage.getItem( 'array'))
 var array = []
+
 
 botao.on( 'click', (event) => {
     event.preventDefault();
@@ -26,17 +29,23 @@ botao.on( 'click', (event) => {
     // console.log(clientes)
 
     let i = 0;
-    let test = prompt()
+    //let test = prompt()
 
 
 
     array.push( test )
     console.log( array )
+    console.log(localStorageTransactions)
 })
 
 cep.on( 'change', ()=>{
     const busca = cep.val();
 
+    
+})
+
+
+const buscaCep = () => {
     $.getJSON(`https://viacep.com.br/ws/${busca}/json/`, ( cep ) => {
         console.log( cep )
 
@@ -45,8 +54,7 @@ cep.on( 'change', ()=>{
         $( '#cidade' ).val( cep.localidade );
         $( '#uf' ).val( cep.uf );
     })
-})
-
+}
 
 
 
