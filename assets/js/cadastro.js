@@ -6,6 +6,7 @@ const rg = $( '#rg' );
 const cep = $( '#cep' );
 const botao = $( '#btnCadastro' );
 
+
 //-------------------------------------------------------------------------------------------------
 // BUSCANDO O CEP
 const buscarCep = () =>{
@@ -22,6 +23,7 @@ const buscarCep = () =>{
 
 cep.on( 'change', buscarCep)
 
+
 //--------------------------------------------------------------------------------------------------
 //CRIANDO OBJETO ENDEREÇO
 const criaEndereco = ( ) => {
@@ -37,6 +39,7 @@ const criaEndereco = ( ) => {
 }
 
 
+//----------------------------------------------------------------------------------------------------
 // CRIANDO OBJETOS CLIENTE
 const criaCliente = ( enderecoObjeto ) =>{
     const cliente = { 
@@ -49,6 +52,7 @@ const criaCliente = ( enderecoObjeto ) =>{
     return cliente
 }
 
+
 //--------------------------------------------------------------------------------------------------
 // SALVANDO DADOS
 const salvaStorage = ( cliente ) => {
@@ -56,10 +60,11 @@ const salvaStorage = ( cliente ) => {
     // ENVIA PARA NOSSO STORAGE DE NOME CLIENTES DADOS DO OBJETO CLIENTE                                                           
 }
 
+
 //---------------------------------------------------------------------------------------------------
 //PEGANDO DADOS
 const buscaStorage = () =>{
-    // BUSA NO STORAGE, E CASO NÃO TENHA NADA CRIADO ELE RETORNA UM ARRAY VAZIO
+    // BUSCA NO STORAGE, E CASO NÃO TENHA NADA CRIADO ELE RETORNA UM ARRAY VAZIO
     if ( !localStorage.getItem( 'clientes' ) ){
         return []
     }
@@ -67,6 +72,7 @@ const buscaStorage = () =>{
         return JSON.parse(localStorage.getItem( 'clientes' ) )
     }     
 } 
+
 
 //----------------------------------------------------------------------------------------------------
 // COLOCANDO CLIENTE NO STORAGE
@@ -82,5 +88,22 @@ const salvaCliente = ( cliente ) => {
 botao.on( 'click', ( event )=> {
     event.preventDefault()
 
-    salvaCliente( criaCliente( criaEndereco() ) )
+    conferindoDados() 
 })
+
+//----------------------------------------------------------------------------------------------------
+//CONFERE TODOS OS CAMPOS
+const conferindoDados = () =>{
+    if( !nome.val() && !email.val() && !senha.val() && !rg.val() && !cep.val() ){
+        alert( 'PREENCHA TODOS OS CAMPOS' );
+    }
+    else if( senha.val() !== senhaConfirmacao.val() ){
+        alert( 'A SENHAS ESTÃO DIFERENTE' )
+    }
+    else if( !email.val().includes('@' && '.com') ){
+        alert( 'INSIRA UM EMAIL VÁLIDO')
+    }
+    else{
+        salvaCliente( criaCliente( criaEndereco() ) )
+    }
+}
