@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="assets\css\cadastro.css">
+    <script src="assets\js\jquery.js" defer></script>
+    <script src="assets\js\cadastro.js" defer></script>
+    
+
+</head>
+<body>
+
+    <header class="cabecalho">
+        <span class="titulo">Projeto Modulo 2</span>
+        <nav class="menu">
+            <ul>
+                <a href="index.html"><p>Home</p></a>
+                <a href="sobre.html"><p>Sobre</p></a>
+                <a href="contato.html"><p>Contato</p></a>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Efetue seu cadastro</h1>
+    <main>
+        <form class="cadastro">
+            <input id="nome" placeholder="Digite seu nome" type="text" required>
+            <input id="email" placeholder="Digite seu email" type="email"required>    
+            <input id="senha" placeholder="Escolha sua Senha" type="password"> 
+            <input id="senhaConfirm" placeholder="Confirme sua senha" type="password"> 
+            <input id="rg" placeholder="Digite seu rg" type="text"> 
+            <input id="cep" placeholder="Digite seu cep" type="text"> 
+            
+            
+            <label>Rua:
+            <input id="rua" type="text"/></label><br/>
+            <label>Número:
+            <input id="numero" type="number"/></label><br/>
+            <label>Bairro:
+            <input id="bairro" type="text"/></label><br/>
+            <label>Cidade:
+            <input id="cidade" type="text"/></label><br/>
+            <label>Estado:
+            <input id="uf" type="text"/></label><br/>
+            
+            <button id="btnCadastro">Cadastrar</button>
+            <span>Já tem uma conta? <a href="login.html">Fazer login</a></span>
+        </form>
+    </main>
+    
+</body>
+</html>
