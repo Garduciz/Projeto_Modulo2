@@ -1,6 +1,6 @@
 const nome = $( '#nome' );
 const email = $( '#email' );
-const senha = $( '#senha');
+const senha = $( '#senha' );
 const senhaConfirmacao = $( '#senhaConfirm');
 const rg = $( '#rg' );
 const cep = $( '#cep' );
@@ -20,9 +20,7 @@ const buscarCep = () =>{
         $( '#uf' ).val( endereco.uf );
     })
 }
-
-cep.on( 'change', buscarCep)
-
+cep.on( 'change', buscarCep );
 
 //--------------------------------------------------------------------------------------------------
 //CRIANDO OBJETO ENDEREÇO
@@ -49,14 +47,14 @@ const criaCliente = ( enderecoObjeto ) =>{
         rg: rg.val(),
         endereco: enderecoObjeto
     }
-    return cliente
+    return cliente;
 }
 
 
 //--------------------------------------------------------------------------------------------------
 // SALVANDO DADOS
 const salvaStorage = ( cliente ) => {
-    localStorage.setItem( 'clientes', JSON.stringify( cliente ) ) 
+    localStorage.setItem( 'clientes', JSON.stringify( cliente ) ) ;
     // ENVIA PARA NOSSO STORAGE DE NOME CLIENTES DADOS DO OBJETO CLIENTE                                                           
 }
 
@@ -66,10 +64,10 @@ const salvaStorage = ( cliente ) => {
 const buscaStorage = () =>{
     // BUSCA NO STORAGE, E CASO NÃO TENHA NADA CRIADO ELE RETORNA UM ARRAY VAZIO
     if ( !localStorage.getItem( 'clientes' ) ){
-        return []
+        return [];
     }
     else{ // SE TIVER ALGO ELE RETORNA AS INFORMAÇÕES QUE ESTÃO LÁ 
-        return JSON.parse(localStorage.getItem( 'clientes' ) )
+        return JSON.parse(localStorage.getItem( 'clientes' ) );
     }     
 } 
 
@@ -82,15 +80,6 @@ const salvaCliente = ( cliente ) => {
     salvaStorage( clientes ); // SALVA AS NOVAS INFORMAÇÕES NO STORAGE CLIENTES
 }
 
-
-//----------------------------------------------------------------------------------------------------
-// EVENTO DE CLICK CNAMANDO AS FUNÇÕES PARA A MAGICA ACONTECER
-botao.on( 'click', ( event )=> {
-    event.preventDefault()
-
-    conferindoDados() 
-})
-
 //----------------------------------------------------------------------------------------------------
 //CONFERE TODOS OS CAMPOS
 const conferindoDados = () =>{
@@ -98,12 +87,19 @@ const conferindoDados = () =>{
         alert( 'PREENCHA TODOS OS CAMPOS' );
     }
     else if( senha.val() !== senhaConfirmacao.val() ){
-        alert( 'A SENHAS ESTÃO DIFERENTE' )
+        alert( 'A SENHAS ESTÃO DIFERENTE' );
     }
-    else if( !email.val().includes('@' && '.com') ){
-        alert( 'INSIRA UM EMAIL VÁLIDO')
+    else if( !email.val().includes( '@' && '.com' ) ){
+        alert( 'INSIRA UM EMAIL VÁLIDO' );
     }
     else{
-        salvaCliente( criaCliente( criaEndereco() ) )
+        salvaCliente( criaCliente( criaEndereco() ) );
     }
 }
+
+//----------------------------------------------------------------------------------------------------
+// EVENTO DE CLICK CNAMANDO AS FUNÇÕES PARA A MAGICA ACONTECER
+botao.on( 'click', ( event )=> {
+    event.preventDefault();
+    conferindoDados();
+})
