@@ -5,11 +5,20 @@ const senhaConfirmacao = $( '#senhaConfirm');
 const rg = $( '#rg' );
 const cep = $( '#cep' );
 const botao = $( '#btnCadastro' );
+const inputs = $( 'input' );
 
+// EVENTOS 
+botao.on( 'click', ( event )=> {
+    event.preventDefault();
+    conferindoDados();
+    limpaDados();
+})
+
+cep.on( 'change', buscarCep );
 
 //-------------------------------------------------------------------------------------------------
 // BUSCANDO O CEP
-const buscarCep = () =>{
+function buscarCep(){
     const busca = cep.val();
     $.getJSON(`https://viacep.com.br/ws/${busca}/json/`, ( endereco ) => {
         console.log( endereco )
@@ -20,7 +29,7 @@ const buscarCep = () =>{
         $( '#uf' ).val( endereco.uf );
     })
 }
-cep.on( 'change', buscarCep );
+
 
 //--------------------------------------------------------------------------------------------------
 //CRIANDO OBJETO ENDEREÇO
@@ -98,8 +107,10 @@ const conferindoDados = () =>{
 }
 
 //----------------------------------------------------------------------------------------------------
-// EVENTO DE CLICK CNAMANDO AS FUNÇÕES PARA A MAGICA ACONTECER
-botao.on( 'click', ( event )=> {
-    event.preventDefault();
-    conferindoDados();
-})
+// LIMPANDO DADOS 
+const limpaDados = () =>{
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].value = ''      
+    }
+}
+

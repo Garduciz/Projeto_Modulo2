@@ -14,7 +14,7 @@ h2 {
     text-align: center;
 }
 
-.login, input{
+.login, input, button{
 font-size: large;
 border-radius: 5px;
 }

@@ -16,7 +16,7 @@ const confereEmail = () => {
             alert( 'Esse email já está cadastrado na nossa fila de espera' );
             break;
         }
-        else if( i === email.length && dadosStorage[i].email !== email.val() ){
+        else if( i === email.length && dadosStorage[i].email !== email.val()){
             alert( 'vamos se cadastrar' );
             window.location.href = "cadastro.html";
         }   

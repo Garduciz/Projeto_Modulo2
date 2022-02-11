@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets\css\login.css">
     <title>Página de Login</title>
+    <script src="assets\js\jquery.js" defer></script>
+    <script src="assets\js\login.js" defer></script>
 </head>
 
 <body>
@@ -13,15 +15,11 @@
 
     <form class="login">
         <h2>Faça sua inscrição</h2>
-        <label for="fname">Nome:</label>
-        <input type="text" id="fname" name="fname" placeholder="escreva seu nome"><br><br>
         <label for="lname">Email:</label>
-        <input type="text" id="lname" name="lname" placeholder="escreva seu email"><br><br>
+        <input type="text" id="email"  placeholder="Escreva seu email"><br><br>
         <label for="fname">Senha:</label>
-        <input type="text" id="fname" name="fname" placeholder="coloque seu email"><br><br>
-        <label for="lname">Confirmação de Senha:</label>
-        <input type="text" id="lname" name="lname" placeholder="confirme sua senha"><br><br>
-        <input type="submit" value="Enviar">
+        <input type="password" id="senha" placeholder="Digite sua senha"><br><br>
+        <button id="btn"> Logar </button>
     </form>
 
 </body>
