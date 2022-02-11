@@ -11,7 +11,6 @@ const inputs = $( 'input' );
 botao.on( 'click', ( event )=> {
     event.preventDefault();
     conferindoDados();
-    limpaDados();
 })
 
 cep.on( 'change', buscarCep );
@@ -48,12 +47,12 @@ const criaEndereco = ( ) => {
 
 //----------------------------------------------------------------------------------------------------
 // CRIANDO OBJETOS CLIENTE
-const criaCliente = ( enderecoObjeto ) =>{
+const criaCliente = ( enderecoObjeto) =>{
     const cliente = { 
-        nome: nome.val(),
-        email: email.val(),
-        senha: senha.val(),
-        rg: rg.val(),
+        nome: $( '#nome' ).val(),
+        email: $( '#email' ).val(),
+        senha: $( '#senha' ).val(),
+        rg: $( 'rg' ).val(),
         endereco: enderecoObjeto
     }
     return cliente;
@@ -87,16 +86,21 @@ const salvaCliente = ( cliente ) => {
     const clientes = buscaStorage(); // ELE PEGA AS INFORMAÇOES QUE ESTÃO NO STORAGE
     clientes.push ( cliente ); // ELE ADICIONA AS INFORMÇÕES DO NOVO CLIENTE
     salvaStorage( clientes ); // SALVA AS NOVAS INFORMAÇÕES NO STORAGE CLIENTES
+    alert( 'Cadastro efetuado com sucesso' );
+    window.location.href = 'index.html'
 }
 
 //----------------------------------------------------------------------------------------------------
 //CONFERE TODOS OS CAMPOS
 const conferindoDados = () =>{
-    if( !nome.val() && !email.val() && !senha.val() && !rg.val() && !cep.val() ){
+    if( !nome.val() || !email.val() || !senha.val() || !rg.val() || !cep.val() ){
         alert( 'PREENCHA TODOS OS CAMPOS' );
     }
     else if( senha.val() !== senhaConfirmacao.val() ){
         alert( 'A SENHAS ESTÃO DIFERENTE' );
+    }
+    else if ( rg.val().length !== 10 ){
+        alert( 'TAMANHO DO RG É INVALIDO')
     }
     else if( !email.val().includes( '@' && '.com' ) ){
         alert( 'INSIRA UM EMAIL VÁLIDO' );
@@ -114,3 +118,4 @@ const limpaDados = () =>{
     }
 }
 
+console.log( inputs)
