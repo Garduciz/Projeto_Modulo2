@@ -1,22 +1,294 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/* Define as propriedades a todos os elementos 
+   da página.*/
+* {
+	/* Remove a margem externa de todos os lados 
+	   do elemento.*/
+	margin: 0;
+
+	/* Remove o espaçamento interno de todos os 
+	   lados do elemento. */
+	padding: 0;
+
+	/* O preenchimento e a borda serão incluídos 
+	   na largura e na altura.
+	box-sizing: border-box; */
+
+	/* Define o tipo da fonte.*/
+	font-family: "arial";
+}
+
 body {
+
+	/*Torna o elemento um flex container, 
+	  transformando todos os seus elementos 
+	  internos (filhos) em flex itens.*/
+	display: flex;
+
+	/*Alinha os flex itens de acordo com o eixo 
+	  do container. */
+	align-items: center;
+
+	/*Alinha os itens flex no container de 
+	  acordo com a direção. */
+	justify-content: center;
+
+	/* Altura mínima do elemento. */
+	/* Unidades de tamanho da tela vh e vw.*/
+	min-height: 100vh;
+
+    background: #8A2BE2;
+
+}
+
+legend {
+    font-size: 25px;
+    font-family: Alegreya;
+    margin: 12px 0;
+    color: #fff;
+    font-weight: 700;
+}
+
+figure {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    }
+
+.fig {
+    display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+	box-shadow: 1px 1px 1px;
+    height: 30px;
+    width: 70px;
+    background: #00000057;
+    }
 
+.fig:hover {
+    background: #fff;
 }
 
-.login{
-    border: 2px solid black;
-    padding: 1rem;
+div#detalhe {
+	/* Cor do elemento */
+	background: #4B0082;
+
+	/* Define a largura do elemento. */
+	width: 350px;
+
+	/* Define a altura do elemento. */
+	height: 460px;
+
+	/* Delimita o tamamnho máximo do elemento.*/
+	max-width: 70vw;
+
+	/* Arredonda cantos. */
+	border-radius: 10px;
+
+	/* Adiciona sombra nos elementos. */
+	box-shadow: 5px 5px 15px;
+
+	/* Modifica a inclinação do elemento em 
+	   um plano 2D. */
+	/* Parâmetros: eixo x , eixo y. em graus.*/
+	transform: skew(6deg, 3deg);
+
+	/* Posiciona qualquer elemento de acordo com 
+	   o elemento pai, Deixando de fazer parte do 
+	   fluxo comum do documento.*/
+	position: absolute;
+
+    margin: -163 -45;
+
+    /* Define a ordem dos elementos quando 
+       sobrepostos.*/
+   	z-index: -1;
 }
-h2 {
+
+section {
+	display: flex;
+
+	background: #6494ed28;
+	
+	/*Gerar espaço ao redor do conteúdo do elemento
+	  30px superior e inferior
+	  5px para a esquerda e direita. */
+	padding: 30px 5px;
+
+	/* Arredonda cantos. */
+	border-radius: 10px;
+
+	/* Adiciona sombra nos elementos */
+	box-shadow: 5px 5px 15px;
+
+	/* Tamanho máximo do elemento*/
+	max-width: 70vw;
+}
+
+section, form, legend {
     text-align: center;
+	padding: 12px 5px;
+    }
+
+fieldset{
+	/* Remove a borda. */
+	border:none;
 }
 
-.login, input, button{
-font-size: large;
-border-radius: 5px;
+.container input {
+	margin: 15px 10px;
+
+	/* Define a largura do elemento. */
+	width: calc(100% - 20px);
+
+	/* Defina a altura do elementos. */
+	height: 50px;
+
+	/* Remove a borda. */
+	border: none;
+
+	background-color: #00000000;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+	border-radius: 4px;
+	color: #000;
+			
+	/* Tamanho da fonte.*/
+	font-size: 18px;
+
+	/* Gera espaço ao redor do conteúdo do elemento
+	   (superior, direito, inferior e esquerdo) */
+	padding: 14px 10px 0 10px;
 }
 
+.container {
+	/* Tipo de método de posicionamento de um elemento (estático, relativo, fixo, absoluto ou aderente)
+	/* Definido como relative, indica que está posicionado em relação à sua posição normal. 
+	Outro conteúdo não será ajustado para caber em qualquer lacuna deixada pelo elemento.*/
+
+	/* relative - indica que esta posicionado
+	   em relação à sua posição normal. */
+	position: relative;
+}
+
+.container label {
+	/* Tranforma o texto deixando todas as letras
+	   em maiúsculo. */
+    text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 700;
+	color: #ADD8E6;
+
+	/* Posiciona qualquer elemento de acordo com o 
+	   elemento pai, deixando de fazer parte do fluxo 
+	   comum do documento.*/
+	position: absolute;
+
+	/* Defina a altura entre linha. */
+	line-height: 30px;
+
+	/* Posição vertical que necessita que o elemento 
+	   tenha uma posição determinada. */
+	top: 10px;
+
+	/* Distância da borda esquerda.*/
+	left: 20px;
+
+	/* Impede a seleção de texto.*/
+	user-select: none;
+
+	/* Se o elemento deve agir ou não a
+	   eventos do ponteiro. */
+	   pointer-events: none;
+
+	/* Altera os valores das propriedades
+	   suavemente em um tempo determinado.*/
+	transition: 0.5s;
+}
+
+/* ~ - Quando ocorrer o foco no input 
+   altere as propriedades do label. */
+   .container input:focus ~ label,
+   .container input:valid ~ label {
+	   left: 20px;
+	   top: -10px;
+	   color: #00acd7;
+   }
+
+#check input:checked ~ label,
+#check input:valid ~ label {
+	color: #fff;
+}
+	
+button {
+	/*auto  - Centraliza horizontalmente 
+	  o elemento em seu conteiner.*/ 
+	margin: 20px 0;
+	margin-left: 0;
+	
+	/* Ocupar metade do fieldset descontando a 
+	   margin de 10px*/
+	width: 80px;
+	height: 30px;
+
+	background-color: #00000057;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 20px;
+
+	/* Muda o ponteiro do mouse.*/
+	cursor: pointer;
+
+	/* Linear - Mesma velocidade do início ao fim. */
+	transition: .3s linear;
+}
+
+button:hover {
+	/* Altera a cor do elemento. */
+	color: aqua;
+}
+
+form a {
+
+	/* Remove a decoração padrão do elemento
+	   Na tag a "link" remove o traço inferior. */
+	text-decoration: none;
+    color: #111;
+	font-weight: 500;
+	text-align: center;
+}
+
+form a:hover {
+	color: #fff;
+}
+
+@media only screen and (max-width: 310px) {
+	div#detalhe {
+		display: auto;
+        height: auto;
+        width: auto;
+	}
+
+	section {
+		min-width: 100%;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	button {
+		width: 100%;
+		margin-left: 0;
+    }
+}
 
