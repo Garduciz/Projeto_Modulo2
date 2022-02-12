@@ -34,7 +34,7 @@ const confereCampos = () => {
         alert( 'PREENCHA TODOS OS CAMPOS' );
     }
     else{
-        confereLogin()
+        confereLogin();
     }
     
 }
