@@ -1,3 +1,4 @@
+
 html, body{
     height: 100%;
     margin: 0px;
@@ -8,6 +9,10 @@ html, body{
     display: inline-flex;
     margin-left: 555px;
 }
+.corCabecalho{
+        background-color: #563d7c;
+        color: #FFF;
+    }
 /* Aqui as animações do titulo para fazer com que a caixa se transcione para a direita*/
 @keyframes fadeInText{
     from{
@@ -41,7 +46,7 @@ html, body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(184, 29, 184);
+    background-color: purple;
     transform: translateX(-100%);
     animation: revealBlock 0.8s 1.1s both;
 }
