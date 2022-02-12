@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login{
+    border: 2px solid black;
+    padding: 1rem;
+}
+h2 {
+    text-align: center;
+}
+
+.login, input, button{
+font-size: large;
+border-radius: 5px;
+}
+
+

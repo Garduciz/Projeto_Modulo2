@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    height: 25px;
+    background-color: black;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: row wrap;
+    text-decoration: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    display: flex;
+}
+
+ul,li{
+    list-style: none;
+    padding-left: 14px;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+}
+
+.confere{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 35px 0 35px 0;
+}
+
+.cadastro{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 200px;
+    
+}
+
+.rodape{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    padding-top: 4px;
+    padding-left: 8px;
+}
