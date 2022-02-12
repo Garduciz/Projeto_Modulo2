@@ -87,7 +87,7 @@ const salvaCliente = ( cliente ) => {
     clientes.push ( cliente ); // ELE ADICIONA AS INFORMÇÕES DO NOVO CLIENTE
     salvaStorage( clientes ); // SALVA AS NOVAS INFORMAÇÕES NO STORAGE CLIENTES
     alert( 'Cadastro efetuado com sucesso' );
-    window.location.href = 'index.html'
+    window.location.href = 'sobre.html'
 }
 
 //----------------------------------------------------------------------------------------------------
@@ -118,4 +118,4 @@ const limpaDados = () =>{
     }
 }
 
-console.log( inputs)
+
