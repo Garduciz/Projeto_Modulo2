@@ -22,7 +22,7 @@
 }
 
 body {
-
+	border: 3px solid red;
 	/*Torna o elemento um flex container, 
 	  transformando todos os seus elementos 
 	  internos (filhos) em flex itens.*/
@@ -32,17 +32,20 @@ body {
 	  do container. */
 	align-items: center;
 
+	flex-flow: column;
 	/*Alinha os itens flex no container de 
 	  acordo com a direção. */
 	justify-content: center;
 
 	/* Altura mínima do elemento. */
 	/* Unidades de tamanho da tela vh e vw.*/
-	min-height: 100vh;
+	/* min-height: 100vh; */
 
     background: #8A2BE2;
-
+	
 }
+
+
 
 legend {
     font-size: 25px;

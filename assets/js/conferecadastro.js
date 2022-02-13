@@ -10,7 +10,11 @@ botao.on( 'click', (event) => {
 const confereEmail = () => {
     for (let i = 0; i <= dadosStorage.length; i++) {
         
-        if( dadosStorage === undefined || dadosStorage[i].email !== email.val() && email.val()){
+        if( dadosStorage.length === 0 ){
+            alert( 'vamos se cadastrar' );
+            window.location.href = "cadastro.html";
+        }
+        else if ( dadosStorage[i].email !== email.val() && email.val() ){
             alert( 'vamos se cadastrar' );
             window.location.href = "cadastro.html";
             break;
