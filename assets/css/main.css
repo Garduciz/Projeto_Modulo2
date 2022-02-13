@@ -4,11 +4,6 @@ html, body{
     margin: 0px;
     padding: 0px;
 }
-/* CSS do titulo pra deixar ele alinhado no centro */
-.titulo{
-    display: inline-flex;
-    margin-left: 550px;
-}
 .corCabecalho{
         background-color: #563d7c;
         color: #FFF;

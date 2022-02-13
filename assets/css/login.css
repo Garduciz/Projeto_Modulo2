@@ -88,7 +88,7 @@ div#detalhe {
 	background: #4B0082;
 
 	/* Define a largura do elemento. */
-	width: 556px;
+	width: 526px;
 
 	/* Define a altura do elemento. */
 	height: 458px;
@@ -167,7 +167,7 @@ fieldset{
 	color: #000;
 			
 	/* Tamanho da fonte.*/
-	font-size: 18px;
+	font-size: 15px;
 
 	/* Gera espaço ao redor do conteúdo do elemento
 	   (superior, direito, inferior e esquerdo) */
