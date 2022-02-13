@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets\css\login.css">
     <title>Página de Login</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="assets/css/swiper.css" rel="stylesheet">
+  	<link href="assets/css/sobre.css" rel="stylesheet">
     <script src="assets\js\jquery.js" defer></script>
     <script src="assets\js\login.js" defer></script>
 
@@ -23,45 +30,46 @@
 </head>
 
 <body>
-
-    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
-        <div class="container">
-    
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html">FOCUS CODE</a> 
-    
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text" href="index.html">Zinc</a> -->
-    
-            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Serviço e Assinaturas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Cadastro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Nossa Equipe</a>
-                    </li>
-                    
-                </ul>
-                <span class="nav-item">
-                    <a class="btn-solid-sm" href="#login">Login</a>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
+    <header>
+        <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+            <div class="container">
+      
+                <!-- Image Logo -->
+                <a class="navbar-brand logo-image" href="index.html">FOCUS CODE</a> 
+      
+                <!-- Text Logo - Use this if you don't have a graphic logo -->
+                <!-- <a class="navbar-brand logo-text" href="index.html">Zinc</a> -->
+      
+                <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Serviço e Assinaturas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro.html">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Nossa Equipe</a>
+                        </li>
+                        
+                    </ul>
+                    <span class="nav-item">
+                        <a class="btn-solid-sm" href="login.html">Login</a>
+                    </span>
+                </div> <!-- end of navbar-collapse -->
+            </div> <!-- end of container -->
         </nav> <!-- end of navbar -->
         <!-- end of navigation -->
+    </header>
 
-    <section class="formulario">
+    <section class="centro">
 
         <form>
 
@@ -94,7 +102,7 @@
             </fieldset>
 
             <form>
-                <a href="#">Recuperar Senha</a>
+                <a href="recuperacaoDeSenha.html">Recuperar Senha</a>
             </form>
 
         </form>
@@ -126,4 +134,10 @@
 
 </body>
 
+    <!-- Arquivos JS-->
+    <script src="assets/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="assets/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="assets/js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="assets/js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="assets/js/scripts.js"></script> <!-- Custom scripts -->
 </html>
