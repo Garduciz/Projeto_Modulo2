@@ -53,13 +53,28 @@ ul,li{
     margin-top: 78px;
 }
 
+.principal1{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    border: 3px solid red;
+    height: 800px;
+}
+
+.principal{
+    margin: 130px 0 130px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
 .cadastro{
     padding-top: 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     width: 800px;
-    height: 450px;
+    height: 750px;
     /* border: 3px solid red; */
     
 }
@@ -97,18 +112,18 @@ input{
     border: 3px solid #6168ff;
 }
 
-
-.principal1{
+.planos{
     display: flex;
-    align-items: center;
-    flex-flow: column;
+    justify-content: center;
+    flex-wrap: row;   
+    border: 3px solid rgb(38, 0, 255); 
+    width: 500px;
+    height: 300px;
+
 }
 
-.principal{
-    margin: 130px 0 130px;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
+.planos > input {
+    height: 10px;
 }
 
 input::-webkit-outer-spin-button,
