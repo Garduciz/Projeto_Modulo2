@@ -8,6 +8,7 @@ botao.on( 'click', (event) => {
 })
 
 const confereEmail = () => {
+    let dadosConfere = false;
     for (let i = 0; i <= dadosStorage.length; i++) {
         
         if( dadosStorage.length === 0 ){
@@ -15,9 +16,7 @@ const confereEmail = () => {
             window.location.href = "cadastro.html";
         }
         else if ( dadosStorage[i].email !== email.val() && email.val() ){
-            alert( 'vamos se cadastrar' );
-            window.location.href = "cadastro.html";
-            break;
+            dadosConfere = true;
         }
         else if( email.val() === '' ){
             alert( 'PREENCHA O CAMPO DE EMAIL')
@@ -27,6 +26,11 @@ const confereEmail = () => {
             break;
         }
     }
+
+    if( dadosConfere ){
+        alert( 'VOCE JÁ ESTA CADASTRADO, LOGO TERA ACESSO LIBERADO' );
+    }
+    
 }
 
 

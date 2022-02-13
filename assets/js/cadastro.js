@@ -4,6 +4,13 @@ const senha = $( '#senha' );
 const senhaConfirmacao = $( '#senhaConfirm');
 const rg = $( '#rg' );
 const cep = $( '#cep' );
+const rua = $( '#rua' );
+const numero = $( '#numero' );
+const bairro = $( ' #bairro' );
+const cidade = $( 'cidade' );
+const uf = $( '#uf' );
+const complemento = $( '#complemento' );
+
 const botao = $( '#btnCadastro' );
 const inputs = $( 'input' );
 
@@ -22,10 +29,10 @@ function buscarCep(){
     $.getJSON(`https://viacep.com.br/ws/${busca}/json/`, ( endereco ) => {
         console.log( endereco )
 
-        $( '#rua' ).val( endereco.logradouro );
-        $( '#bairro' ).val( endereco.bairro );
-        $( '#cidade' ).val( endereco.localidade );
-        $( '#uf' ).val( endereco.uf );
+        rua.val( endereco.logradouro );
+        bairro.val( endereco.bairro );
+        cidade.val( endereco.localidade );
+        uf.val( endereco.uf );
     })
 }
 
@@ -33,14 +40,7 @@ function buscarCep(){
 //--------------------------------------------------------------------------------------------------
 //CRIANDO OBJETO ENDEREÇO
 const criaEndereco = ( ) => {
-    const endereco = {
-        cep: cep.val(),
-        rua: $( '#rua' ).val(),
-        numero: $( '#numero' ).val(),
-        bairro: $( '#bairro' ).val(),
-        cidade: $( '#cidade' ).val(),
-        estado: $( '#uf' ).val()
-    }
+    const endereco = new Endereco( cep.val(), rua.val(), numero.val(), bairro.val(), cidade.val(), uf.val(), complemento.val() );
     return endereco;
 }
 
@@ -48,13 +48,7 @@ const criaEndereco = ( ) => {
 //----------------------------------------------------------------------------------------------------
 // CRIANDO OBJETOS CLIENTE
 const criaCliente = ( enderecoObjeto) =>{
-    const cliente = { 
-        nome: $( '#nome' ).val(),
-        email: $( '#email' ).val(),
-        senha: $( '#senha' ).val(),
-        rg: $( 'rg' ).val(),
-        endereco: enderecoObjeto
-    }
+    const cliente = new Cliente( nome.val(), email.val(), senha.val(), rg.val(), enderecoObjeto ); 
     return cliente;
 }
 
@@ -118,4 +112,26 @@ const limpaDados = () =>{
     }
 }
 
+//-------------------------------------------------------------------------------------------------------
+// Classes
+class Cliente{
+    constructor( nome, email, senha, rg, endereco ){
+        this.nome = nome,
+        this.email = email,
+        this.senha = senha,
+        this.rg = rg,
+        this.endereco = endereco
+    }
+}
 
+class Endereco{
+    constructor( cep, rua, numero, bairro, cidade, uf, complemento){
+        this.cep = cep,
+        this.rua = rua,
+        this.numero = numero,
+        this.bairro = bairro,
+        this.cidade = cidade,
+        this.uf = uf, 
+        this.complemento = complemento
+    }
+}
