@@ -116,7 +116,7 @@ h6 {
 
 a {
 	color: #5e6576;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:hover {

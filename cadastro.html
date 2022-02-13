@@ -10,16 +10,18 @@
     <link href="assets/css/sobre.css" rel="stylesheet">
     
 
-    <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
-    <!-- <link href="assets/css/swiper.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/sobre.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets\css\cadastro.css">
+    
     <script src="assets\js\jquery.js" defer></script>
     <script src="assets\js\cadastro.js" defer></script>
-
     <script src="assets/js/bootstrap.min.js" defer></script> <!-- Bootstrap framework -->
     <script src="assets/js/swiper.min.js" defer></script> 
-    <!-- <script src="assets/js/purecounter.min.js" defer></script> Purecounter counter for statistics numbers -->
-    <!-- <script src="assets/js/isotope.pkgd.min.js" defer></script> Isotope for filter -->
-    <script src="assets/js/scripts.js" defer></script> 
+    <script src="assets/js/scripts.js" defer></script>  
 
 
 
@@ -71,11 +73,24 @@
     </div>
     <center></center>
     
-    <main class="principal"> 
-        <h1>DIGITE SEU EMAIL</h1>
-        <form action="">
-            <input id="email" placeholder="Digite seu Email" type="text">
-            <button id="btn">Consultar</button>
+    <main class="principal1"> 
+        <form class="cadastro">
+            <input id="nome" placeholder="Digite seu nome" type="text" required>
+            <input id="email" placeholder="Digite seu email" type="email"required>    
+            <input id="senha" placeholder="Escolha sua Senha" type="password"> 
+            <input id="senhaConfirm" placeholder="Confirme sua senha" type="password"> 
+            <input id="rg" placeholder="Digite seu rg" type="text"> 
+            <input id="cep" placeholder="Digite seu cep" type="text"> 
+            
+            <input id="rua" type="text" placeholder="Rua"/>
+            <input id="numero" type="number" placeholder="Nº"/>
+            <input id="bairro" type="text" placeholder="Bairro"/>
+            <input id="cidade" type="text" placeholder="Cidade"/>
+            <input id="uf" type="text" placeholder="UF"/>
+            <input id="complemento" type="text" placeholder="Complemento">
+            
+            <button id="btnCadastro">Cadastrar</button>
+            <span>Já tem uma conta? <a href="login.html">Fazer login</a></span>
         </form>
 
     </main>
