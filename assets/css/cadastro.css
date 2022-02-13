@@ -97,7 +97,12 @@ input{
     border: 3px solid #6168ff;
 }
 
-
+.principal{
+    margin: 130px 0 130px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
