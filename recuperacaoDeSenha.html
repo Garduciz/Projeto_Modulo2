@@ -11,6 +11,8 @@
     <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
     <link href="assets/css/swiper.css" rel="stylesheet">
   	<link href="assets/css/sobre.css" rel="stylesheet">
+    <script src="assets\js\jquery.js" defer></script>
+    <script src="assets\js\recuperacaoDeSenha.js" defer></script>
     <title>Recuperação de Senha</title>
 </head>
 <body>
@@ -57,9 +59,9 @@
             <form class="h-100 d-inline-block d-flex justify-content-center d-flex align-items-center text-center">
                 <div class="form-group">
                 <label for="exampleInputEmail1">Endereço de e-mail</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o e-mail">
+                <input id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o e-mail">
                 <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu e-mail com mais ninguém.</small>
-                <input class=" btn btn-primary" type="submit" value="Enviar">
+                <input id="btn" class=" btn btn-primary" type="submit" value="Enviar">
                 </div>
             </form>
         </div>
