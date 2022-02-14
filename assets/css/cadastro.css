@@ -66,13 +66,19 @@ header{
     justify-content: space-around;
     width: 1200px;
     height: 750px;
-    /* border: 3px solid red; */
+    
     
 }
 
 .entradas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: 3px solid red;
     width: 800px;
+    height: 350px;
 }
+
 input{
     height: 50px;
     width: 350px;
