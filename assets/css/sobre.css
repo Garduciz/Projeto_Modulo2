@@ -30,7 +30,6 @@ Colors:
 - Body text - dark gray #5e6576
 ******************************************/
 
-
 /**************************/
 /*     General Styles     */
 /**************************/
@@ -117,7 +116,7 @@ h6 {
 
 a {
 	color: #5e6576;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:hover {
@@ -545,17 +544,7 @@ select {
 	background-size: 90px 90px;
 }
 
-.cards-1 .card-icon.blue {
-	background: url('../images/services-icon-bg-blue.png') center center no-repeat;
-}
 
-.cards-1 .card-icon.yellow {
-	background: url('../images/services-icon-bg-yellow.png') center center no-repeat;
-}
-
-.cards-1 .card-icon.red {
-	background: url('../images/services-icon-bg-red.png') center center no-repeat;
-}
 
 .cards-1 .card-icon .fas,
 .cards-1 .card-icon .far {

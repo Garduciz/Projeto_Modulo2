@@ -6,22 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets\css\login.css">
     <title>Página de Login</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="assets/css/swiper.css" rel="stylesheet">
+  	<link href="assets/css/sobre.css" rel="stylesheet">
     <script src="assets\js\jquery.js" defer></script>
     <script src="assets\js\login.js" defer></script>
+    
+
+    <script src="assets/js/bootstrap.min.js" defer></script> <!-- Bootstrap framework -->
+    <!-- <script src="assets/js/swiper.min.js" defer></script> Swiper for image and text sliders -->
+    <!-- <script src="assets/js/purecounter.min.js" defer></script> Purecounter counter for statistics numbers -->
+    <!-- <script src="assets/js/isotope.pkgd.min.js" defer></script> Isotope for filter -->
+    <script src="assets/js/scripts.js" defer></script> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="assets/css/swiper.css" rel="stylesheet">
+	<link href="assets/css/sobre.css" rel="stylesheet">
+
+    
 </head>
 
 <body>
-    <h1>Login</h1>
+    <header>
+        <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+            <div class="container">
+      
+                <!-- Image Logo -->
+                <a class="navbar-brand logo-image" href="index.html">FOCUS CODE</a> 
+      
+                <!-- Text Logo - Use this if you don't have a graphic logo -->
+                <!-- <a class="navbar-brand logo-text" href="index.html">Zinc</a> -->
+      
+                <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Serviço e Assinaturas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="confereCadastro.html">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Nossa Equipe</a>
+                        </li>
+                        
+                    </ul>
+                    <span class="nav-item">
+                        <a class="btn-solid-sm" href="login.html">Login</a>
+                    </span>
+                </div> <!-- end of navbar-collapse -->
+            </div> <!-- end of container -->
+        </nav> <!-- end of navbar -->
+        <!-- end of navigation -->
+    </header>
 
-    <form class="login">
-        <h2>Faça sua inscrição</h2>
-        <label for="lname">Email:</label>
-        <input type="text" id="email"  placeholder="Escreva seu email"><br><br>
-        <label for="fname">Senha:</label>
-        <input type="password" id="senha" placeholder="Digite sua senha"><br><br>
-        <button id="btn"> Logar </button>
-    </form>
+    <section class="centro">
+
+        <form>
+
+            <figure>
+                <div class="fig 01"><img src="./img/facebook.png" alt="facebook" width="20px" height="20px"></div>
+                <div class="fig 02"><img src="./img/instagram.png" alt="instagram" width="20px" height="20px"></div>
+                <div class="fig 03"><img src="./img/twitter.png" alt="twitter" width="20px" height="20px"></div>
+            </figure>
+
+            <legend>Faça seu login</legend>
+
+            <div id="detalhe"></div>
+
+            <fieldset>
+                <div class="container">
+                    <label for="endereço" id="email">E-mail</label>
+                    <input type="email" id="endereço">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="container">
+                    <label for="password" id="senha">Senha</label>
+                    <input type="password" id="password">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <button name="submit">Login</button>
+            </fieldset>
+
+            <form>
+                <a href="recuperacaoDeSenha.html">Recuperar Senha</a>
+            </form>
+
+        </form>
+    </section>
+
+    
+        <!-- Copyright -->
+    <div class="copyright bg-gray">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <ul class="list-unstyled li-space-lg p-small">
+                      <li><a href="article.html">Article Details</a></li>
+                      <li><a href="terms.html">Terms & Conditions</a></li>
+                      <li><a href="privacy.html">Privacy Policy</a></li>
+                  </ul>
+              </div> <!-- end of col -->
+              <div class="col-lg-3">
+                  <p class="p-small statement">Copyright © <a href="https://github.com/irenacosta/">I</a> <a href="https://github.com/Andersonjmc"> A</a> <a href="https://github.com/Garduciz">B</a> <a href="https://github.com/DamasioRamos">D</a> <a href="https://github.com/MatricBts">M</a>, 2022.</p>
+              </div> <!-- end of col -->
+              <div class="col-lg-3">
+                  <p class="p-small statement">Projeto desenvolvido com fins educadionais.</a></p>
+              </div> <!-- end of col -->
+          </div> <!-- enf of row -->
+      </div> <!-- end of container -->
+  </div> <!-- end of copyright --> 
+  <!-- end of copyright -->
+ 
 
 </body>
 
+    <!-- Arquivos JS-->
+    <script src="assets/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="assets/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="assets/js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="assets/js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    
 </html>
