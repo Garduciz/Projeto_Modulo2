@@ -18,14 +18,15 @@
     <link rel="stylesheet" href="assets\css\cadastro.css">
     
     <script src="assets\js\jquery.js" defer></script>
-    <script src="assets\js\cadastro.js" defer></script>
     <script src="assets/js/bootstrap.min.js" defer></script> <!-- Bootstrap framework -->
     <script src="assets/js/swiper.min.js" defer></script> 
     <script src="assets/js/scripts.js" defer></script>  
 
+    <script src="assets\js\cadastro.js" defer></script>
 
 
     <title>Cadastro</title>
+
 
 </head>
 
@@ -75,33 +76,113 @@
     
     <main class="principal1"> 
         <form class="cadastro">
-            <input id="nome" placeholder="Digite seu nome" type="text" required>
-            <input id="email" placeholder="Digite seu email" type="email"required>    
-            <input id="senha" placeholder="Escolha sua Senha" type="password"> 
-            <input id="senhaConfirm" placeholder="Confirme sua senha" type="password"> 
-            <input id="rg" placeholder="Digite seu rg" type="text"> 
-            <input id="cep" placeholder="Digite seu cep" type="text"> 
-            
-            <input id="rua" type="text" placeholder="Rua"/>
-            <input id="numero" type="number" placeholder="Nº"/>
-            <input id="bairro" type="text" placeholder="Bairro"/>
-            <input id="cidade" type="text" placeholder="Cidade"/>
-            <input id="uf" type="text" placeholder="UF"/>
-            <input id="complemento" type="text" placeholder="Complemento">
-
-            <div class="planos">
-                <label>
-                    <input type="radio" name="funcao" value="codificar" checked>
-                </label>
-            
-                <label>
-                    <input type="radio" name="funcao" value="decodificar">
-                </label>
-
-                <label>
-                    <input type="radio" name="funcao" value="decodificar">
-                </label>
+            <div class="entradas">
+                <input id="nome" placeholder="Digite seu nome" type="text" required>
+                <input id="email" placeholder="Digite seu email" type="email"required>    
+                <input id="senha" placeholder="Escolha sua Senha" type="password"> 
+                <input id="senhaConfirm" placeholder="Confirme sua senha" type="password"> 
+                <input id="rg" placeholder="Digite seu rg" type="text"> 
+                <input id="cep" placeholder="Digite seu cep" type="text"> 
+                
+                <input id="rua" type="text" placeholder="Rua"/>
+                <input id="numero" type="number" placeholder="Nº"/>
+                <input id="bairro" type="text" placeholder="Bairro"/>
+                <input id="cidade" type="text" placeholder="Cidade"/>
+                <input id="uf" type="text" placeholder="UF"/>
+                <input id="complemento" type="text" placeholder="Complemento">
             </div>
+            
+
+            <!-- <div class="planos"> -->
+                 <!-- Pricing -->
+                <div id="pricing" class="cards-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="h2-heading"><span>Aqui você encontra</span><br> a melhor assinatura pra você!</h2>
+                            </div> <!-- end of col -->
+                        </div> <!-- end of row -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                
+                                <!-- Card -->
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <img class="decoration-lines"  alt="alternative"><span>Focus básico</span><img class="decoration-lines flipped"  alt="alternative">
+                                        </div>
+                                        <ul class="list-unstyled li-space-lg">
+                                            <li>Teste de (re)conhecimento</li>
+                                            <li>Escolha de branch básica</li>
+                                            <li>DevBadges</li>
+                                            <li>Acesso a bot narrador</li>
+                                            <li>Acesso básico a bot supervisora</li>
+                                        </ul>
+                                        <div class="price">R$ 57,90<p>por mês (plano mensal)</p>
+                                            <small class="text-muted">ou R$ 35,70*</small><p>por mês (plano anual)</p>
+                                            <p>R$ 428,40 no total</p>
+                                            
+                                        </div>    
+                                    
+                                            <input type="radio" name="funcao" value="codificar" checked> Codificar
+                            
+                                    </div>
+                                </div>
+                                <!-- end of card -->
+
+                                <!-- Card -->
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <img class="decoration-lines"  alt="alternative"><span>Focus suficiente</span><img class="decoration-lines flipped"  alt="alternative">
+                                        </div>
+                                        <ul class="list-unstyled li-space-lg">
+                                            <li>Teste de (re)conhecimento</li>
+                                            <li>Escolha de branch básica e de branch especializada</li>
+                                            <li>BugTracker básico e DevBadges</li>
+                                            <li>Acesso aos bots narradores</li>
+                                            <li>Acesso básico às bots supervisoras</li>
+                                            <li>e mais!</li>
+                                        </ul>
+                                        <div class="price">R$ 79,10<p>por mês (plano mensal)</p>
+                                            <small class="text-muted">ou R$ 57,90*</small><p>por mês (plano anual)</p>
+                                            <p>R$ 694,80 no total</p>
+                                        </div>
+                                        <a href="#contact" class="btn-outline-reg">Eu quero!</a>
+                                    </div>
+                                </div>
+                                <!-- end of card -->
+
+                                <!-- Card -->
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <img class="decoration-lines" alt="alternative"><span>Focus completo</span><img class="decoration-lines flipped" alt="alternative">
+                                        </div>
+                                        <ul class="list-unstyled li-space-lg">
+                                            <li>Teste de (re)conhecimento</li>
+                                            <li>Escolha de branches básica e especializada</li>
+                                            <li>Trilha master exclusiva pós conclusão total da trilha</li>
+                                            <li>BugTracker completo e DevBadges exclusivas</li>
+                                            <li>Acesso a todos os bots do APP</li>
+                                            <li>e muito mais!</li>
+                                        </ul>
+                                        <div class="price">R$ 91,30<p>por mês (plano mensal)</p>
+                                            <small class="text-muted">ou R$ 79,10*</small><p>por mês (plano anual)</p>
+                                            <p>R$ 949,20 no total</p>
+                                        </div>
+                                        <a href="#contact" class="btn-outline-reg">Eu quero!</a>
+                                    </div>
+                                </div>
+                                <!-- end of card -->
+
+                            </div> <!-- end of col -->
+                        </div> <!-- end of row -->
+                    </div> <!-- end of container -->
+                </div> <!-- end of cards-2 -->
+                <!-- end of pricing -->
+                
+            <!-- </div> -->
             
             <button id="btnCadastro">Cadastrar</button>
             <span>Já tem uma conta? <a href="login.html">Fazer login</a></span>
@@ -113,7 +194,7 @@
 
     <footer>
           <!-- Copyright -->
-      <div class="copyright bg-gray">
+      <!-- <div class="copyright bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -123,15 +204,15 @@
                         <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div> <!-- end of col -->
-                <div class="col-lg-3">
+                <!-- <div class="col-lg-3">
                     <p class="p-small statement">Copyright © <a href="https://github.com/irenacosta/">I</a> <a href="https://github.com/Andersonjmc"> A</a> <a href="https://github.com/Garduciz">B</a> <a href="https://github.com/DamasioRamos">D</a> <a href="https://github.com/MatricBts">M</a>, 2022.</p>
                 </div> <!-- end of col -->
-                <div class="col-lg-3">
+                <!-- <div class="col-lg-3">
                     <p class="p-small statement">Projeto desenvolvido com fins educadionais.</a></p>
                 </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
+            <!-- </div> <!-- enf of row -->
+        <!-- </div> <!-- end of container -->
+    <!-- </div> end of copyright  -->
     <!-- end of copyright -->
     </footer>
 

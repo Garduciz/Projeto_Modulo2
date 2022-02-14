@@ -26,15 +26,6 @@ header{
     color: white;
 }
 
-ul{
-    display: flex;
-}
-
-ul,li{
-    list-style: none;
-    padding-left: 14px;
-}
-
 .principal{
     display: flex;
     justify-content: center;
@@ -57,7 +48,7 @@ ul,li{
     display: flex;
     align-items: center;
     flex-flow: column;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     height: 800px;
 }
 
@@ -73,10 +64,14 @@ ul,li{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    width: 800px;
+    width: 1200px;
     height: 750px;
     /* border: 3px solid red; */
     
+}
+
+.entradas{
+    width: 800px;
 }
 input{
     height: 50px;
