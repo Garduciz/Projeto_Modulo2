@@ -51,13 +51,6 @@ header{
     height: 1600px;
 }
 
-.principal{
-    margin: 130px 0 130px;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    
-}
 
 .cadastro{
     padding-top: 20px;
