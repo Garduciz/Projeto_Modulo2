@@ -43,4 +43,3 @@ function buscaStorage () {
         return JSON.parse(localStorage.getItem( 'clientes' ) );
     }     
 } 
-

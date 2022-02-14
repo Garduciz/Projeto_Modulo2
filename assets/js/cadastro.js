@@ -7,9 +7,10 @@ const cep = $( '#cep' );
 const rua = $( '#rua' );
 const numero = $( '#numero' );
 const bairro = $( ' #bairro' );
-const cidade = $( 'cidade' );
+const cidade = $( '#cidade' );
 const uf = $( '#uf' );
 const complemento = $( '#complemento' );
+
 
 const botao = $( '#btnCadastro' );
 const inputs = $( 'input' );
