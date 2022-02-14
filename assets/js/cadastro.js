@@ -11,6 +11,8 @@ const cidade = $( '#cidade' );
 const uf = $( '#uf' );
 const complemento = $( '#complemento' );
 
+const testando = JSON.parse(localStorage.getItem( 'clientes' ) )
+console.log( testando[testando.length-1].nome )
 
 const botao = $( '#btnCadastro' );
 const inputs = $( 'input' );
@@ -48,8 +50,8 @@ const criaEndereco = ( ) => {
 
 //----------------------------------------------------------------------------------------------------
 // CRIANDO OBJETOS CLIENTE
-const criaCliente = ( enderecoObjeto) =>{
-    const cliente = new Cliente( nome.val(), email.val(), senha.val(), rg.val(), enderecoObjeto ); 
+const criaCliente = ( enderecoObjeto, planoEscolhido ) =>{
+    const cliente = new Cliente( nome.val(), email.val(), senha.val(), rg.val(), enderecoObjeto, planoEscolhido ); 
     return cliente;
 }
 
@@ -81,9 +83,21 @@ const salvaCliente = ( cliente ) => {
     const clientes = buscaStorage(); // ELE PEGA AS INFORMAÇOES QUE ESTÃO NO STORAGE
     clientes.push ( cliente ); // ELE ADICIONA AS INFORMÇÕES DO NOVO CLIENTE
     salvaStorage( clientes ); // SALVA AS NOVAS INFORMAÇÕES NO STORAGE CLIENTES
-    alert( 'Cadastro efetuado com sucesso' );
+    alert( ` Parabéns ${ clientes[clientes.length-1].nome }, seu cadastro foi efetuado com sucesso com o plano ${ clientes[clientes.length-1].plano }` );
     window.location.href = 'sobre.html'
 }
+
+
+//----------------------------------------------------------------------------------------------------
+//CONFERE A ESCOLHA DO PLANO
+const conferindoPlano = () =>{
+    for (let i = 0; i < inputs.length; i++) { // ELE BUSCA EM TODOS OS INPUS
+        if( inputs[i].checked === true){ // SE O INPUT TIVER TICADO (SOMENTE OS DOS PLANOS PODEM SER TICADOS)
+            return inputs[i].value ; // ELE TRAS O VALOR DETERMINADO NO INPUT, NO HTML PODE VER DENTRO DA PROPRIA TAG
+        }    
+    }
+}
+
 
 //----------------------------------------------------------------------------------------------------
 //CONFERE TODOS OS CAMPOS
@@ -101,27 +115,24 @@ const conferindoDados = () =>{
         alert( 'INSIRA UM EMAIL VÁLIDO' );
     }
     else{
-        salvaCliente( criaCliente( criaEndereco() ) );
+        salvaCliente( criaCliente( criaEndereco(), conferindoPlano() ) );
     }
 }
 
 //----------------------------------------------------------------------------------------------------
 // LIMPANDO DADOS 
-const limpaDados = () =>{
-    for (let i = 0; i < inputs.length; i++) {
-        inputs[i].value = ''      
-    }
-}
+
 
 //-------------------------------------------------------------------------------------------------------
 // Classes
 class Cliente{
-    constructor( nome, email, senha, rg, endereco ){
+    constructor( nome, email, senha, rg, endereco, plano ){
         this.nome = nome,
         this.email = email,
         this.senha = senha,
         this.rg = rg,
-        this.endereco = endereco
+        this.endereco = endereco,
+        this.plano = plano
     }
 }
 
@@ -136,3 +147,5 @@ class Endereco{
         this.complemento = complemento
     }
 }
+
+

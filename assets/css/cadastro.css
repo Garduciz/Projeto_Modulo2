@@ -47,9 +47,8 @@ header{
 .principal1{
     display: flex;
     align-items: center;
-    flex-flow: column;
-    /* border: 3px solid red; */
-    height: 800px;
+    flex-flow: column wrap;
+    height: 1600px;
 }
 
 .principal{
@@ -57,6 +56,7 @@ header{
     display: flex;
     align-items: center;
     flex-flow: column;
+    
 }
 
 .cadastro{
@@ -74,7 +74,6 @@ header{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    border: 3px solid red;
     width: 800px;
     height: 350px;
 }
@@ -100,7 +99,7 @@ input{
 
 #btnCadastro{
     width: 100%;
-    margin: 20px 100px 0 100px;
+    margin: 0 200px 0 200px;
     height: 50px;
     border-radius: 30px;
     background-color: #6168ff;
@@ -117,7 +116,6 @@ input{
     display: flex;
     justify-content: center;
     flex-wrap: row;   
-    border: 3px solid rgb(38, 0, 255); 
     width: 500px;
     height: 300px;
 
@@ -139,3 +137,7 @@ input[type=number] {
 }
 
 
+.rodape{
+    bottom:0;
+    width:100%;
+}
