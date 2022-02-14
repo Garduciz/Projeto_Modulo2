@@ -21,7 +21,6 @@
 }
 
 body {
-	border: 3px solid red;
 	/*Torna o elemento um flex container, 
 	  transformando todos os seus elementos 
 	  internos (filhos) em flex itens.*/
@@ -89,10 +88,10 @@ div#detalhe {
 	background: #4B0082;
 
 	/* Define a largura do elemento. */
-	width: 526px;
-
+	width: 324px;
+	
 	/* Define a altura do elemento. */
-	height: 458px;
+	height: 347px;
 	/* Delimita o tamamnho máximo do elemento.*/
 	max-width: 70vw;
 
@@ -112,7 +111,7 @@ div#detalhe {
 	   fluxo comum do documento.*/
 	position: absolute;
 
-    margin: -96 -33;
+    margin: -102 -50;
 
     /* Define a ordem dos elementos quando 
        sobrepostos.*/
@@ -141,10 +140,10 @@ section {
 
 section, form, legend {
     text-align: center;
-	padding: 12px 5px;
+	padding: 15px 15px;
     }
 
-fieldset{
+fieldset, #email{
 	/* Remove a borda. */
 	border:none;
 }
@@ -157,10 +156,10 @@ fieldset{
 
 	/* Defina a altura do elementos. */
 	height: 50px;
-
+	flex-direction: column;
 	/* Remove a borda. */
 	border: none;
-
+	
 	background-color: #00000000;
     border-top: 1px solid #fff;
     border-left: 1px solid #fff;
@@ -172,7 +171,7 @@ fieldset{
 
 	/* Gera espaço ao redor do conteúdo do elemento
 	   (superior, direito, inferior e esquerdo) */
-	padding: 14px 10px 0 10px;
+	padding: 10px 10px 0 10px;
 }
 
 .container {
@@ -192,11 +191,10 @@ fieldset{
 	font-size: 15px;
 	font-weight: 700;
 	color: #ADD8E6;
-
 	/* Posiciona qualquer elemento de acordo com o 
 	   elemento pai, deixando de fazer parte do fluxo 
 	   comum do documento.*/
-	position: relative;
+	position: absolute;
 
 	/* Defina a altura entre linha. */
 	line-height: 30px;
@@ -296,4 +294,20 @@ form a:hover {
 		margin-left: 0;
     }
 }
-
+input{
+	margin: 100px;
+}
+.formulario, input, #email{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: auto;
+	height: auto;
+}
+.botao{
+	display: flex;
+	border-left: 15px;
+	justify-content: center;
+	margin: 10px;
+}
