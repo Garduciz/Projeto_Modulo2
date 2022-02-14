@@ -8,7 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='assets\css\main.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" defer rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
     <link href="assets/css/swiper.css" rel="stylesheet">
   	<link href="assets/css/sobre.css" rel="stylesheet">
@@ -56,38 +56,85 @@
   <!-- end of navigation -->
     
     <header id="header" class="header">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-6 col-xl-5">
-                  <div class="text-container">
-                      <h1 class="h1-large textoTitulo">Sobre a Focus <Code></Code></h1>
-                      <p class="p-large">A Focus Code é uma aplicação que visa ajudar o desenvolvedor que acabou de concluir 
-                        <br>seu curso de formação e <strong>QUER</strong> seguir uma trilha focada em colher bons resultados. 
-                        <br>Não somos uma plataforma de curso, mas uma plataforma com recursos tecnológicos 
-                        <br>desenvolvidos com profundo conhecimento de causa para te ajudar a <strong>MANTER O FOCO</strong> e 
-                        <br>seguir a jornada incrível que você tem capacidade para seguir. 
-                        <br>Com o nosso app você vai entrar em um processo de gamificação de caminhada acompanha- 
-                        <br>do por nossa inteligência artificial trabalhada por mente e corações humanos por trás 
-                        <br>de todo o projeto.
-                        <br>Ao entrar na nossa aplicação você ativa a ação <strong>“EU QUERO”</strong>, um verbo poderoso quando 
-                        <br>queremos contar uma história, capaz de movimentar muitas possibilidades quando estamos 
-                        <br>comprometidos com a jornada.
-                        </p> 
-                  </div> <!-- end of text-container -->
-              </div> <!-- end of col -->
-              <div class="col-lg-6 col-xl-7">
-                  <div class="image-container">
-                      <img class="img-fluid" src="assets/img/illustration-2.png" alt="alternative">
-                  </div> <!-- end of image-container -->
-              </div> <!-- end of col -->
-          </div> <!-- end of row -->
-      </div> <!-- end of container -->
-  </header> <!-- end of header -->
-  <!-- end of header -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h1 class="h1-large">O foco na sua caminhada Dev chegou!</h1>
+                        <p class="p-large">A Focus Code é uma aplicação que visa ajudar o desenvolvedor que acabou de concluir 
+                        seu curso de formação e <strong>QUER</strong> seguir uma trilha focada em colher bons resultados. </p> 
+                    </div> <!-- end of text-container -->
+                    <div>
+                        <p class="text-center btnIns"><button type="button" onclick="inscricao()" class="btn btn-primary ">Quero me Inscrever!</button></p>                        
+                    </div>
+                </div> <!-- end of col -->
+            <div class="col-lg-6 col-xl-7">
+                <div class="image-container">
+                    <img class="img-fluid" src="assets/img/illustration-2.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> 
 
-    <p class="text-center btnIns"><button type="button" onclick="inscricao()" class="btn btn-primary ">Quero me Inscrever!</button></p>
-    <p class="text-center"><button class="btn btn-sm btn-outline-secondary" onclick="sobre()" type="button"> Quero saber mais Sobre!</button></p>
-     
+           <!-- Details 1 -->
+        <div id="details" class="basic-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-7">
+                        <div class="image-container">
+                            <img class="img-fluid" src="img/images/diagramacircuitoerosto.jpg" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6 col-xl-5">
+                        <div class="text-container">
+                            <h2><span>Somos uma aplicação</span><br>de inteligência artificial </h2>
+                            <p>desenvolvida com profundo conhecimento de causa para te ajudar a <strong>MANTER O FOCO</strong> e
+                            seguir a jornada incrível que você tem capacidade para seguir como Desenvolvedor.</p>
+                            <p>Com o nosso app você vai entrar em um processo de gamificação de caminhada acompanha- 
+                                do por nossa inteligência artificial trabalhada por mente e corações humanos por trás 
+                                de todo o projeto.</p>
+                        </div> <!-- end of text-container -->
+                        <div>
+                            <p class="text-center btnIns"><button type="button" onclick="inscricao()" class="btn btn-primary ">Quero me Inscrever!</button></p>
+                            <p class="text-center"><button class="btn btn-sm btn-outline-secondary" onclick="sobre()" type="button"> Mais informações</button></p>
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-1 -->
+        <!-- end of details 1 -->
+
+        <!-- Details 2 -->
+           <div id="details" class="basic-1">
+            <div class="container">
+                <div class="row">                    
+                    <div class="col-lg-6 col-xl-5">
+                        <div class="text-container">
+                            <h2><span>Você ativa a ação do</span><br>"eu quero!"</h2>
+                            <p>Ao entrar na nossa aplicação você ativa a ação <strong>“EU QUERO”</strong>, um verbo poderoso quando 
+                                queremos contar uma história, capaz de movimentar muitas possibilidades quando estamos 
+                                comprometidos com a jornada.</p>
+                        </div> <!-- end of text-container -->
+                        <div>
+                            <p class="text-center btnIns"><button type="button" onclick="inscricao()" class="btn btn-primary ">Quero me Inscrever!</button></p>
+                            <p class="text-center"><button class="btn btn-sm btn-outline-secondary" onclick="sobre()" type="button"> Mais informações</button></p>
+                        </div>
+                    </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="img/images/caminhesuaaventura.gif" alt="alternative">
+                        
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-1 -->
+        <!-- end of details 1 -->    
+        
+      
     <div class="copyright bg-gray">
       <div class="container">
           <div class="row">
