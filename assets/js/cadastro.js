@@ -139,7 +139,7 @@ const conferindoDados = () =>{
 
 // CONFERINDO SE O EMAIL JÁ ESTA CADASTRADO NO STORAGE
 //======================================================================================================
-const confereEmailCadastrado = (clientes) => {
+const confereEmailCadastrado = ( clientes ) => {
     let emailExistente = false; // BOLENO QUE A GENTE VAI USAR PARA VERIFICAR SE O EMAIL JÁ ESTÁ CADASTRADO
     
     if( clientes.length >= 1){ // SE O ARRAY CLIENTES TIVER ALGUM ELEMENTO ELE EXECUTA O CODIGO ABAIXO
