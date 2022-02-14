@@ -83,7 +83,7 @@ const salvaCliente = ( cliente ) => {
     const clientes = buscaStorage(); // ELE PEGA AS INFORMAÇOES QUE ESTÃO NO STORAGE
     clientes.push ( cliente ); // ELE ADICIONA AS INFORMÇÕES DO NOVO CLIENTE
     salvaStorage( clientes ); // SALVA AS NOVAS INFORMAÇÕES NO STORAGE CLIENTES
-    alert( ` Parabéns ${ clientes[clientes.length-1].nome }, seu cadastro foi efetuado com sucesso com o plano ${ clientes[clientes.length-1].plano }` );
+    alert( ` Parabéns ${ clientes[clientes.length-1].nome }, seu cadastro foi efetuado com sucesso com o plano: Focus ${ clientes[clientes.length-1].plano }` );
     window.location.href = 'sobre.html'
 }
 
