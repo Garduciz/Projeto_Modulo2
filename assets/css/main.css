@@ -28,7 +28,6 @@ html, body{
 /* Aqui as você linka as animações junto com o titulo 
    e pode fazer algumas alterações na cor e etc...*/
 .textoTitulo{
-    margin-top: 60px;
     opacity: 0;
     animation: fadeInText 0s 1.1s both;
     position: relative;
