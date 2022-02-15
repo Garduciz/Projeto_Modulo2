@@ -38,10 +38,10 @@ const confereEmailCadastrado = ( clientes ) => {
 const exibeMensagem = ( validador ) => {
     //CONDICIONAL BASEADO NO EMAILEXISTENTE, O BOLEANO
     if ( validador ) {// SE VALIDADOR FOR VERDADEIRO, ELE ENVIA UM EMAIL A O USUARIO
-        alert( `Um email de recuperação de senha foi enviado para ${ email.val() } ` );
+        alert( `Um email de recuperação de senha foi enviado para ${ email.val() }` );
         window.location.href = 'login.html'
     } else {
-        alert('Não achamos um cadastro referente a esse email !!!!'); // SE FOR FALSO ELE EXIBE A MENSAGEGEM QUE NÃO  CADASTRO ACHOU O EMAIL
+        alert( 'NÃO ACHAMOS UM CADASTRO REFERENTE A ESSE EMAIL !!!!' ); // SE FOR FALSO ELE EXIBE A MENSAGEGEM QUE NÃO  CADASTRO ACHOU O EMAIL
     }
 }
 //========================================================================================================
