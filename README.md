@@ -53,7 +53,7 @@ Após três ativações da robô-supervisora é ativada a Zora, nossa robô-coru
 | :---: | :---: | :---: |
 | [<img src="https://avatars.githubusercontent.com/u/55266551?v=4" width=115><br><sub>Matric Bastos</sub>](https://github.com/matricbts) |  [<img src="https://avatars.githubusercontent.com/u/94466133?v=4" width=115><br><sub>Irena Costa</sub>](https://github.com/irenacosta) |
 
-## ⚖️[Licença]
+## ⚖️Licença
 MIT License
 
 Copyright (c), 2022. Equipe IABDM.
