@@ -155,7 +155,7 @@ const confereEmailCadastrado = ( clientes ) => {
     
     //CONDICIONAL BASEADO NO EMAILEXISTENTE, O BOLEANO
     if ( emailExistente ) {// SE EMAIL EXISTENTE FOR VERDADEIRO, ELE AVISA A O USUARIO
-        alert( 'Email já cadastrado' );
+        alert( 'EMAIL JÁ CADASTRADO' );
     } else {
         conferindoDados(); // SE FOR FALSO ELE EXECUTA O PROCESSO DE CADASTRO
     }
