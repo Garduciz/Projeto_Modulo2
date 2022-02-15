@@ -35,7 +35,7 @@ Após três ativações da robô-supervisora é ativada a Zora, nossa robô-coru
 
 ## :hammer: Features do código desenvolvido no Front-End de apresentação da FOCUS CODE
 
-- [x] Framework CC Boostrap5 aplicando estilo e responsividade em todas as páginas e seus elementos;
+- [x] Framework CSS Boostrap5 aplicando estilo e responsividade em todas as páginas e seus elementos;
 - [x] API ViaCEP utilizado para obter dados referentes ao endereço utilizado pelo usuário ao efetuar o cadastro;
 - [x] Javascript utilizando classes e POO na construção do objeto;
 - [x] jQuery para manipulação de DOM e requisições HTTP.
@@ -71,4 +71,3 @@ SOFTWARE.
 
 ## Finalidade
 Projeto desenvolvido no final do Módulo 2 com objetivo educacional no curso de Desenvolvimento Web Full-Stack da Resilia Educação. Turma 15, de dezembro/2021 a junho/2022.
-
