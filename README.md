@@ -69,5 +69,5 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTH
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Autores
+## Finalidade
 Projeto desenvolvido no final do Módulo 2 para fins educacionais no curso de Desenvolvimento Web Full-Stack da Resilia Educação. Turma 15, de dezembro/2021 a junho/2022.
