@@ -70,4 +70,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OU
 SOFTWARE.
 
 ## Finalidade
-Projeto desenvolvido no final do Módulo 2 para fins educacionais no curso de Desenvolvimento Web Full-Stack da Resilia Educação. Turma 15, de dezembro/2021 a junho/2022.
+Projeto desenvolvido no final do Módulo 2 com objetivo educacional no curso de Desenvolvimento Web Full-Stack da Resilia Educação. Turma 15, de dezembro/2021 a junho/2022.
