@@ -1,7 +1,12 @@
 ![descrição da imagem](https://github.com/irenacosta/Projeto_Modulo2/blob/fa2e7fce045ae24b5eee0a8e9b2160c41ddcad15/img/Produto%20Focus%20Code%20(2).png)
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=I.A. EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=FRONT-END&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+</p>
+
+
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=I.A.&message=ARQUITETURA%20EM%20DESENVOLVIMENTO%20E%20TESTES&color=GREEN&style=for-the-badge"/>
 </p>
 
 ## Descrição do produto 
@@ -19,27 +24,28 @@ Escolhida a sua branch, imediatamente Nabetse, o robô narrador da sua jornada, 
 Após três ativações da robô-supervisora é ativada a Zora, nossa robô-coruja. Ela te ajudará a entender o que aconteceu para você ter a perda de foco e – o mais importante – vai te ajudar a voltar para o trilho fazendo uma rota de conhecimento necessária, sem atalhos para você manter a sua jornada com foco. 
 
 
-## :hammer: Funcionalidades do produto proposto
+## :hammer: Funcionalidades do site de apresentação do produto proposto
 
-- `Funcionalidade 1`: descrição da funcionalidade 1.
-- `Funcionalidade 2`: descrição da funcionalidade 2
-- `Funcionalidade 2a`: descrição da funcionalidade 2a relacionada à funcionalidade 2
-- `Funcionalidade 3`: descrição da funcionalidade 3*
+- `Home`: descrição do que o serviço propõe e chamada para inscrição em lista de espera;
+- `Serviço e assinaturas`: detalhes sobre o produto FOCUS CODE e apresentação dos planos de assinatura. A escolha pelo plano leva à página de cadastro;
+- `Cadastro`: captação de dados cadastrais digitados pelo cliente em potencial somados à funcionalidade do API ViaCep que completa os demais campos do endereço e também trata os    erros de informação passados pelo usuário;
+- `Equipe`: apresentação das pessoas por trás do planejamentos e dos códigos da FOCUS CODE com seus contatos (github, linkedin, e-mail e whatsapp);
+- `Login`: opção de efetuar o login usando dados básicos em principais mídias sociais que são iguais aos dados de cadastro em nosso banco de dados;
+- `Recuperação de senha`: um formulário simples e ágil para gerar a solução para o usuário e enviá-la para o e-mail que consta no banco de dados da Focus Code.
 
-   ### Features da
+## :hammer: Features do código desenvolvido no Front-End de apresentação da FOCUS CODE
 
-- [x] Responsividade em todas as páginas Cadastro de usuário
-- [x] API CepCorreios para autopreenchimento do endereço baseado no CEP.
-- [x] Verificação de inscrição na lista de espera
-- [x] Recuperação de senha
+- [x] Framework CC Boostrap5 aplicando estilo e responsividade em todas as páginas e seus elementos;
+- [x] API ViaCEP utilizado para obter dados referentes ao endereço utilizado pelo usuário ao efetuar o cadastro;
+- [x] Javascript utilizando classes e POO na construção do objeto;
+- [x] jQuery para manipulação de DOM e requisições HTTP.
 
-## 📁 Acesso ao projeto
+## 📁 Para acessar a proposta Front-End do FOCUS CODE em seu repositório principal
+- `Repositório no GitHub`: https://github.com/Garduciz/Projeto_Modulo2
 
-**Indique como é possível baixar ou acessar o código fonte do projeto, seja projeto inicial ou final**
+## 🛠️ Para rodar o Front-End de apresentação do produto FOCUS CODE
+- `GitHub Pages`: https://Garduciz.github.io/Projeto_Modulo2/
 
-## 🛠️ Abrir e rodar o projeto
-
-**Apresente as instruções necessárias para abrir e executar o projeto**
 
 ## Autores
 
@@ -47,6 +53,18 @@ Após três ativações da robô-supervisora é ativada a Zora, nossa robô-coru
 | :---: | :---: | :---: |
 | [<img src="https://avatars.githubusercontent.com/u/55266551?v=4" width=115><br><sub>Matric Bastos</sub>](https://github.com/matricbts) |  [<img src="https://avatars.githubusercontent.com/u/94466133?v=4" width=115><br><sub>Irena Costa</sub>](https://github.com/irenacosta) |
 
-## [Licença](#licença)
+## ⚖️[Licença](#licença)
+MIT License
 
-## [Conclusão](#conclusão)
+Copyright (c), 2022. Equipe IABDM.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
