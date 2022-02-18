@@ -9,13 +9,10 @@
     <link rel="stylesheet" href="assets\css\cadastro.css">
     <link href="assets/css/sobre.css" rel="stylesheet">
     
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/css/sobre.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="assets\css\cadastro.css">
+
+  
     
     <script src="assets\js\jquery.js" defer></script>
     <script src="assets/js/bootstrap.min.js" defer></script> <!-- Bootstrap framework -->
@@ -73,11 +70,11 @@
         <h1>Inscreva-se na nossa lista de espera </h1>
     </div>
     <center></center>
-    
+    <div  id="validador"><span class="validador"></span></div>
     <main class="principal1"> 
         <form class="cadastro">
             <div class="entradas">
-                <input id="nome" placeholder="Digite seu nome" type="text" required>
+                <input id="nome" name="nome" placeholder="Digite seu nome" type="text" required>
                 <input id="email" placeholder="Digite seu email" type="email"required>    
                 <input id="senha" placeholder="Escolha sua Senha" type="password"> 
                 <input id="senhaConfirm" placeholder="Confirme sua senha" type="password"> 

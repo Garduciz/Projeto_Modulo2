@@ -114,21 +114,30 @@ const conferindoPlano = () =>{
 }
 //=========================================================================================================
 
+//MENSAGEM ALERTANDO O CLIENTE REFERENTE A ALGUM ERRO DURANTE O CADASTRO
+//====================================================================================================
+const alertaUsuario = ( input, text ) => {
+    input.focus();
+    $( '.validador' ).text( text ).css( 'color', 'red' );
+}
+//=====================================================================================================
+
 
 //CONFERINDO TODOS OS CAMPOS
 //========================================================================================================
 const conferindoDados = () =>{
     if( !nome.val() || !email.val() || !senha.val() || !rg.val() || !cep.val() ){// CONFERE SE TODOS OS CAMPOS ESTÃO PREENCHIDOS
-        alert( 'PREENCHA TODOS OS CAMPOS' );
+        alertaUsuario( nome, 'Preencha corretamente todos os campos !!' )
     }
     else if( senha.val() !== senhaConfirmacao.val() ){ // CONFERE SE AS SENHAS SÃO IGUAIS
-        alert( 'A SENHAS ESTÃO DIFERENTE' );
+        alertaUsuario( senha, 'As senhas não conferem !!' )
     }
     else if ( rg.val().length !== 10 ){ // CONFERE SE RG É MAIOR QUE 10
-        alert( 'TAMANHO DO RG É INVALIDO')
+        alertaUsuario( rg, 'Tamanho do rg é invalido !!' );
     }
     else if( !email.val().includes( '@' && '.com' ) ){ // CONFERE SE EMAIL POSSUI @ E .COM
-        alert( 'INSIRA UM EMAIL VÁLIDO' );
+        alertaUsuario( email, 'Insira um email valido !!' );
+        
     }
     else{ // SE NÃO TIVER NENHUM PROBLEMA COM AS CONDIÇÕES A CIMA ELE EXECUTA O PROCESSO DE CADASTRO
         salvaCliente( criaCliente( criaEndereco(), conferindoPlano() ), clientesStorage() );
