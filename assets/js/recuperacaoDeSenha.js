@@ -7,7 +7,7 @@ const clientes = JSON.parse( localStorage.getItem( 'clientes' ) )
 botao.on( 'click', function (event) {
     event.preventDefault();
     //alert( `Um email de recuperação de senha foi enviado para ${email.val()} ` ) 
-    exibeMensagem( confereEmailCadastrado( clientes ) )
+    confereEmailValido()
 })
 //=====================================================================================================
 
@@ -33,6 +33,15 @@ const confereEmailCadastrado = ( clientes ) => {
 //=====================================================================================================
 
 
+// ALERTANDO O USUARIO SOBRE ALGO DE ERRADO
+//===================================================================================================
+const alertaUsuario = ( input, text ) => {
+    input.focus();
+    $( '.validador' ).text( text ).css( 'color', 'red' );
+}
+//===================================================================================================
+
+
 // MANDANDO O EMAIL ( SIMBOLICO, APENAS AVISA NO ALERT )
 //========================================================================================================
 const exibeMensagem = ( validador ) => {
@@ -40,8 +49,22 @@ const exibeMensagem = ( validador ) => {
     if ( validador ) {// SE VALIDADOR FOR VERDADEIRO, ELE ENVIA UM EMAIL A O USUARIO
         alert( `Um email de recuperação de senha foi enviado para ${ email.val() }` );
         window.location.href = 'login.html'
-    } else {
-        alert( 'NÃO ACHAMOS UM CADASTRO REFERENTE A ESSE EMAIL !!!!' ); // SE FOR FALSO ELE EXIBE A MENSAGEGEM QUE NÃO  CADASTRO ACHOU O EMAIL
+    } 
+    else {
+        alertaUsuario( email, 'Não achamos um cadastro referente a esse email' ); // SE FOR FALSO ELE EXIBE A MENSAGEGEM QUE NÃO  CADASTRO ACHOU O EMAIL
     }
 }
 //========================================================================================================
+
+
+// CONFERINDO SE O QUE FOI DIGITADO É REALMENTE UM EMAIL
+//===================================================================================================
+const confereEmailValido = () => {
+    if( email.val().includes( '@', '.com' ) ){
+        exibeMensagem( confereEmailCadastrado( clientes ) );
+    }
+    else{
+        alertaUsuario( email, 'Insira um email válido!!' );
+    }
+}
+//==================================================================================================
