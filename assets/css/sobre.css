@@ -1591,7 +1591,7 @@ select {
 
 	/* Pricing */
 	.cards-2 .card {
-		width: 342px;
+		width: 30%;
 	}
 	
 	.cards-2 .card:nth-of-type(3n+2) {
@@ -1635,4 +1635,5 @@ select {
 	}
 	/* end of extra pages */
 }
+
 /* end of min-width 1200px */

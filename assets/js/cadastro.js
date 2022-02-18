@@ -137,7 +137,6 @@ const conferindoDados = () =>{
     }
     else if( !email.val().includes( '@' && '.com' ) ){ // CONFERE SE EMAIL POSSUI @ E .COM
         alertaUsuario( email, 'Insira um email valido !!' );
-        
     }
     else{ // SE NÃO TIVER NENHUM PROBLEMA COM AS CONDIÇÕES A CIMA ELE EXECUTA O PROCESSO DE CADASTRO
         salvaCliente( criaCliente( criaEndereco(), conferindoPlano() ), clientesStorage() );
@@ -164,7 +163,7 @@ const confereEmailCadastrado = ( clientes ) => {
     
     //CONDICIONAL BASEADO NO EMAILEXISTENTE, O BOLEANO
     if ( emailExistente ) {// SE EMAIL EXISTENTE FOR VERDADEIRO, ELE AVISA A O USUARIO
-        alert( 'EMAIL JÁ CADASTRADO' );
+        alertaUsuario( email, 'Email já está em uso, tente outro !!' )
     } else {
         conferindoDados(); // SE FOR FALSO ELE EXECUTA O PROCESSO DE CADASTRO
     }
