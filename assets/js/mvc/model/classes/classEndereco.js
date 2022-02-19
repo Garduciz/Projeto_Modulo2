@@ -1,4 +1,3 @@
-
 export class Endereco{
     constructor( cep, rua, numero, bairro, cidade, uf, complemento){
         this.cep = cep,
