@@ -1,5 +1,7 @@
-const botao = $( '#btn' );
-const email = $( '#email' );
+import { email, botao } from './mvc/controllers/variaveis.js';
+
+// const botao = $( '#btn' );
+// const email = $( '#email' );
 const clientes = JSON.parse( localStorage.getItem( 'clientes' ) )
 
 // EVENTOS DO USUARIO
