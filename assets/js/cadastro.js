@@ -32,15 +32,23 @@ cep.on( 'change', buscarCep ); // SEMPRE QUE O CAMPO CEP FOR MUDADADO ELE EXECUT
 // PEGANDO DADOS DO CEP COM A API
 //=====================================================================================================
 // BUSCANDO O CEP
-function buscarCep(){
+async function buscarCep(){
     const busca = cep.val();// BUSCA É O VALOR DO CEP DIGITADO QUE A GENTE COLOCA NA REQUISIÇÃO A API
-    $.getJSON(`https://viacep.com.br/ws/${busca}/json/`, ( endereco ) => { // FAZ UMA REQUISIÇÃO A API,
-    // A REQUISIÇÃO TRAS UM OBJETO, QUE A GENTE UTILIZA NO PARAMETRO ENDERECO.
-        rua.val( endereco.logradouro );
-        bairro.val( endereco.bairro );
-        cidade.val( endereco.localidade );
-        uf.val( endereco.uf );
-    })
+        try{
+            const response = await fetch( `https://viacep.com.br/ws/${busca}/json/` ) ;
+            // SALVA UMA REQUISIÇÃO RESPONSE NA VARIAVEL RESPONSE ( TAMBEM CHAMADO DE PROMISE)
+            const data = await response.json();
+            // CONVERTE A REQUISIÇÃO PARA JSON (  OBJETO )
+        
+            // EXIBE OS DADOS NOS INPUTS
+            rua.val( data.logradouro );
+            bairro.val( data.bairro );
+            cidade.val( data.localidade );
+            uf.val( data.uf );
+        }
+        catch{
+            alertaUsuario( cep, 'Falha ao buscar o cep digitado' );
+        }
 }
 //=======================================================================================================
 
