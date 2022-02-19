@@ -13,6 +13,6 @@ const criaEndereco = ( ) => {
 
 // CRIANDO OBJETOS CLIENTE
 const criaCliente = ( enderecoObjeto, planoEscolhido ) =>{
-    const cliente = new Cliente( nome.val(), email.val(), senha.val(), rg.val(), enderecoObjeto, planoEscolhido ); 
+    const cliente = new Cliente( nome.val(), email.val().toLowerCase(), senha.val(), rg.val(), enderecoObjeto, planoEscolhido ); 
     return cliente;
 }
