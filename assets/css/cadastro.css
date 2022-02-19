@@ -101,7 +101,7 @@ input{
     font-size: calc(1.15rem + 1.5vw)
 }
 
-#btnCadastro{
+#btn{
     width: 100%;
     margin: 0 200px 0 200px;
     height: 50px;
@@ -110,7 +110,7 @@ input{
     color:white;
 }
 
-#btnCadastro:hover{
+#btn:hover{
     background-color: white;
     color: #6168ff;
     border: 3px solid #6168ff;
