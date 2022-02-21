@@ -1,6 +1,6 @@
 function inscricao(){
-    window.location.href="cadastro.html";
+    window.location.href="./pages/cadastro.html";
 }
 function sobre(){
-    window.location.href="sobre.html";
+    window.location.href="./pages/sobre.html";
 }
