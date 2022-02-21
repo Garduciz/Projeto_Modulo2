@@ -14,14 +14,14 @@ botao.on( 'click', (event) => {
 
 //CONFERINDO CREDENCIAIS
 //===================================================================================================
-const confereLogin = ( validador ) => {
+const confereLogin = () => {
     let dadosConfere = false;
     for ( let i = 0; i < dadosStorage.length; i++ ) {
         if( email.val() === dadosStorage[i].email && senha.val() === dadosStorage[i].senha ){
             dadosConfere = true;
         }
     }
-    if( validador ){
+    if( dadosConfere ){
         alert( 'VOCE JÁ ESTA CADASTRADO, LOGO TERA ACESSO LIBERADO' );
     }
     else{
