@@ -35,5 +35,5 @@ const salvaCliente = ( cliente, arrayClientes ) => { // PEGA COMO PARAMETRO O CL
     salvaStorage( arrayClientes ); // ELE MANDA O ARRAY DE CLIENTES SALVOS PARA O STORAGE
 
     alert( ` Parabéns ${ arrayClientes[ arrayClientes.length-1].nome }, seu cadastro foi efetuado com sucesso com o plano: ${ arrayClientes[ arrayClientes.length-1 ].plano }` );
-    window.location.href = 'index.html'
+    window.location.href = './../index.html'
 }
